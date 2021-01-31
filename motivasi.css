@@ -1,0 +1,170 @@
+@font-face {
+    font-family: fontku;
+    src: url('SourceCodePro-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: fontsf;
+    src: url('Action_Man_Shaded.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: fontaction;
+    src: url('Action_Man_Extended.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: fontconcert;
+    src: url('concertone-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: fontviga;
+    src: url('Viga-Regular.otf') format('truetype');
+}
+
+body {
+    background-image: url(image/bodyback.png);
+}
+
+
+/* Navbar */
+
+.navbar {
+    border-bottom: 6px solid #eeeee4;
+    box-shadow: 0 0 8px black;
+}
+
+.nav-but .btn-info {
+    margin-top: 2px;
+    box-shadow: 0 0 3px white;
+}
+
+.navbar img {
+    width: 60px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid rgb(75, 241, 247);
+    animation: animasiimage 2s ease infinite alternate-reverse;
+}
+
+
+.navbar-brand {
+    padding-left: 20px;
+    font-weight: bold;
+    animation: navbarbrand 2s ease infinite alternate-reverse;
+    font-family: fontviga;
+    font-size: 30px;
+}
+
+/* Akhir Navbar */
+
+
+
+
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover::after {
+        border-bottom: 3px solid #ffffff;
+        content: '';
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+
+}
+
+
+@keyframes animasiimage {
+    for {
+        box-shadow: 0 0 8px rgb(255, 255, 255);
+        box-shadow: 1px 1px 2px white;
+    }
+    to {
+        box-shadow: 0 0 8px black;
+    }
+}
+
+
+
+@keyframes navbarbrand {
+    for {
+        text-shadow: 2px 2px white;
+    }
+    to {
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
+/* Motivasi */
+
+.container .motivasi {
+    background-color: white;
+}
+
+.container .paragraf-satu {
+    background-color: white;
+}
+
+.container .motivasi h3 {
+    margin-top: 120px;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px black;
+    text-align: center;
+    font-family: fontsf;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    background-color: #eeeee4;
+    animation: animasih33 1s ease infinite alternate-reverse;
+}
+
+.container .paragraf-satu p {
+    margin-top: 20px;
+}
+
+.paragraf-dua {
+    background-color: salmon;
+}
+
+.container .col-md-7 {
+    border-right: 1px solid blue;
+}
+
+.container .card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px black;
+    margin-top: 10px;
+}
+
+
+
+
+.footer {
+    background-color: #333333;
+    padding: 10px;
+    border-top: 5px solid rgb(13, 206, 141);
+    box-shadow: 0 0 7px black;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+@keyframes animasih33 {
+    for {
+        letter-spacing: 0px;
+    }
+    to {
+        letter-spacing: 1px;
+    }
+}
